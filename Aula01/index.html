@@ -9,9 +9,9 @@
     <!-- conjunto de caracteres para o teclado -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--compatibilidade com o navegador edge  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <!--responsividade, então é sobre o tamanho da tela  -->
-    <title>Aula 01 - c17</title>
+    <title id="titulo-pagina">Aula 01 - c17</title>
     <!-- nome do título da nossa página  -->
   </head>
 
@@ -29,8 +29,13 @@
     </nav>
 
     <header>   
+
+        <figure>
+            <img src="https://www.a-sapiens.it/wp-content/uploads/2019/12/HTTML-1.jpg" alt="Imagem representando o JS">
+            <figcaption>Imagem sobre JavaScript</figcaption>
+        </figure>
         <!-- parte inicial da nossa página, é o cabeçalho de informações visíveis ao usuário -->
-        <h1>Cursos de Programação</h1>
+        <h1 id="titulo-page">Cursos de Programação</h1>
         <!-- título da página -->
     </header>
 
@@ -38,7 +43,7 @@
         <!-- conteúdo principal -->
         <section>
             <!-- separar as seções da minha página -->
-            <h2>HTML e CSS</h2> 
+            <h2 class="titulo-cursos">HTML e CSS</h2> 
             <!-- tag de subtítulo -->
             <article>
                 <!-- Conteúdos que eu posso separa na minha página -->
@@ -55,7 +60,7 @@
         </section>
 
         <section>
-            <h2>JavaScript</h2>
+            <h2 class="titulo-cursos">JavaScript</h2>
 
             <article>
                 <h3>Curso de JavaScript FullStack</h3>
@@ -66,6 +71,41 @@
                 <h3>Curso de Express</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque, nam ipsa animi veritatis hic ea iure atque similique amet rem corporis vitae excepturi nihil nisi impedit, voluptate itaque facere.]</p>
             </article>
+        </section>
+
+        <section>
+            <h2>Videos dos conteúdos</h2>
+            <video src="./caminhodovideo" controls>
+                <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+              </video>
+
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptbk2af68e8?start=858" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117243.14403311117!2d-51.23580355140741!3d-23.321263986704135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435a57af586d%3A0x23ac11a5c614f971!2sLondrina%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1656379117312!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+              <audio controls>
+                <source src="./audio/audiodesculpas-manu.mp3" type="audio/mp3">
+                <p>Musica da Manu Gavassi</p>
+              </audio>
+        </section>
+
+        <section>
+            <form>
+                <h2>Formulário de Inscrição</h2>
+
+                <label for="nome">Nome: </label>
+                <!-- nome do campo no formulário-->
+                <input type="nome" placeholder="Digite aqui seu nome">
+
+                <label for="email">E-mail: </label>
+                <input type="email" placeholder="Digite seu e-mail">
+
+                <button type="submit">Enviar</button>
+
+            </form>
         </section>
 
               
