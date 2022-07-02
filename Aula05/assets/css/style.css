@@ -218,3 +218,14 @@ footer a{
     color: white;
     cursor: pointer;
 }
+
+/* mediaquery */
+@media screen and (max-width: 830px){
+    section#cards {
+       flex-wrap: wrap;
+       flex-direction: column;
+    }
+    span.px600{
+        display: inline-block;
+    }
+}
