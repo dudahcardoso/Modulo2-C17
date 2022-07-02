@@ -8,12 +8,14 @@
 
 html{
     scroll-behavior: smooth;
+    /* rolagem de barra ser mais leve */
 }
 
 /* menu de navegação */
 #nav-bar{
     background-color: rgb(34, 211, 152);
     position: fixed;
+    /* posição ficará fixa */
     width: 100%;
 }
 
@@ -58,13 +60,13 @@ header img{
 header h1{
     text-align: center;
     color: rgb(24, 116, 85);
+    margin-top: 1.2rem;
 }
 
 header p{
     padding: 1rem;
     margin: 1rem 5rem 1rem 5rem;
     font-size: 1.5rem;
-
 }
 
 /* Estilização do main */
@@ -83,3 +85,136 @@ section#cards{
     /* vai ocupar 100% o espaço que ele está */
 }
 
+.card{
+    width: 15rem;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 8px 8px 8px 8px #00000020;
+    /* coloca uma sombra ao fundo */
+    transition: transform .3s ease-in-out;
+}
+
+.card img{
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 0 auto;
+    /* margin 0 deixa 0 em cima e 0 embaixo e o auto é automatica esquerda e direita */
+}
+
+.card h3{
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.card p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* Estilização das imagens e texto */
+
+section#imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#imagens img{
+    width: 100%;
+}
+
+section#imagens p{
+    padding: 3rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Estilização do formulario */
+
+section#inscricao{
+    display: flex;
+    /* margin: 0 auto; */
+    padding: 3rem;
+    align-items: center;
+    /* width: 100%; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+section#inscricao form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+section#inscricao h2{
+    width: 100%;
+    text-align: center;
+    color: rgb(24, 116, 85);
+    margin: 0 0 2rem 0;
+}
+
+section#inscricao label{
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: rgb(24, 116, 85);
+}
+
+section#inscricao input{
+    padding: .4rem;
+    margin: 1rem;
+    border: solid 1px rgb(24, 116, 85);
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+section#inscricao form button{
+    color: rgb(24, 116, 85);
+    border: solid 2px rgb(24, 116, 85);
+    padding: .6rem;
+    font-size: 1.2rem;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    width: 40%;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-radius: 1.2rem;
+}
+
+section#inscricao form button:hover{
+    color: white;
+    background-color: rgb(24, 116, 85);
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+section#inscricao img{
+    width: 40%;
+}
+/* section#inscricao figure#teste{
+    background-color: red;
+} */
+
+
+/* estilização do footer */
+footer{
+    background-color: rgb(34, 211, 152);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
