@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* menu de navegação */
+#nav-bar{
+    background-color: rgb(34, 211, 152);
+    position: fixed;
+    width: 100%;
+}
+
+ul#menu{
+    display: flex; /*coloca os elementos lado a lado  */
+    list-style: none; /*tira a marcação da lista  */
+    align-items: center;/*alinha os elementos o centro  */
+    justify-content: flex-start; /*center* itens centralizam end:vão pro final star: para o começo  */    
+}
+
+ul#menu li{
+    padding: .7rem;
+}
+
+ul#menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .2s;
+}
+
+ul#menu li:hover{
+    transform: scale(1.2);
+}
+
+ul#menu li a:hover{
+    transform: scale(1.2);
+    color: rgb(168, 16, 145);
+}
+
+ul#menu li i{
+    font-size: 2rem;
+    color: white;
+}
+
+/* Estilização do header */
+header img{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+header h1{
+    text-align: center;
+    color: rgb(24, 116, 85);
+}
+
+header p{
+    padding: 1rem;
+    margin: 1rem 5rem 1rem 5rem;
+    font-size: 1.5rem;
+
+}
+
+/* Estilização do main */
+main{
+    margin: 0 8rem 0 8rem;
+}
+
+section#todos-cursos{
+    margin-bottom: 10rem;
+}
+
+section#cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* vai ocupar 100% o espaço que ele está */
+}
+
