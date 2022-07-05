@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+};
+
+body, html{
+    width: 100%; /*largura de 100% onde essa tela estiver  */
+    height: 100vh; /* 100% da tela e todos elementos centralizados */
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /* coloca o espaço ao meio dos elementos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: .6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+section#page-four{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 3rem;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section#page-four article div{
+    background-color: #ccc;
+    width: 100%;
+    height: 200px;
+}
+
+section#page-four article#anuncio div{
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    border: solid 5px #ccc;
+}
+
+/* section#page-four article:nth-child(4n){
+    color: blue;    
+} */
+
+section#page-four article:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+section#page-four article#anuncio{
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+    /* display bloqeua o espaço que o elemento está */
+}
