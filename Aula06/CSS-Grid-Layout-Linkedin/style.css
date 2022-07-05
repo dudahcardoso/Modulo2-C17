@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+};
+
+body, html{
+    width: 100%; /*largura de 100% onde essa tela estiver  */
+    height: 100vh; /* 100% da tela e todos elementos centralizados */
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /* coloca o espaço ao meio dos elementos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: .6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+section#page-three{
+    display: grid;
+    grid-template-columns: 300px 800px 300px;
+    grid-template-rows: auto;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area */
+
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+    grid-template-areas: 
+    "aside-one div aside-two"
+    "aside-one main aside-two";
+    /* variáveis que a gente cria */
+
+    gap: 20px;
+    justify-content: center;
+    padding: 3rem;
+}
+
+section#page-three aside#one{
+    background-color: #ccc;
+    width: 300px;
+    height: 800px;
+
+    /* chamar a variável que criamos */
+    grid-area: aside-one;
+}
+
+section#page-three div{
+    background-color: #ccc;
+    width: 800px;
+    height: 100px;
+
+    /* chamar a variável que criamos */
+    grid-area: div;
+}
+
+section#page-three main{
+    background-color: #ccc;
+    width: 800px;
+    height: 680px;
+
+    /* chamar a variável que criamos */
+    grid-area: main;
+}
+
+section#page-three aside#two{
+    background-color: #ccc;
+    width: 300px;
+    height: 800px;
+
+    /* chamar a variável que criamos */
+    grid-area: aside-two;
+}
