@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+};
+
+body, html{
+    width: 100%; /*largura de 100% onde essa tela estiver  */
+    height: 100vh; /* 100% da tela e todos elementos centralizados */
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /* coloca o espaço ao meio dos elementos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: .6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+section#page-two{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 3rem;
+    padding: 3rem; /* padding foi utilizado para espaçar as letras */
+}
+
+section#page-two main section div{
+    background-color: #ccc;
+    width: 100%;
+    height: 500px;
+}
+
+section#page-two aside section div{
+    background-color: #ccc;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+section#page-two aside section{
+    gap:1rem;
+    display: flex;
+}
+
