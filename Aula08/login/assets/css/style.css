@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(52, 198, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: grey 0px 3px 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+img{
+    width: 30vw;
+    /* width: 400px; cortou a imagem quando responsiva*/
+}
+
+#title{
+    color: rgb(52, 198, 149);
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #949494;
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+
+input{
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+input:focus{
+    border: solid 1px rgb(52, 198, 149);
+}
+
+button{
+    border: solid 1px rgb(52, 198, 149);
+    outline: none;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .2rem;
+    cursor: pointer; 
+    margin-bottom: .8rem;
+    box-shadow: gray 0px 3px 5px;   
+    transition: all .2s ease;
+}
+
+button[type="submit"]{
+    color: #fff;
+    background-color:rgb(52, 198, 149);
+}
+button[type="submit"]:hover{
+    color:rgb(52, 198, 149);
+    background-color:#fff;
+}
+
+button[type="reset"]{
+    color: rgb(52, 198, 149);
+    background-color: #fff;
+}
+button[type="reset"]:hover{
+   background-color: #fff;
+}
+
+@media (max-width: 500px){
+    #img-1{
+        display: none;
+    }
+    section{
+        width: 100%;
+        margin: 1rem;
+    } 
+}
+
+
