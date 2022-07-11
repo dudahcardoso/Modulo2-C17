@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/*estou imortando a fonte doo google fonts*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.header{
+    background-color: rgb(102, 209, 174); /*Altera a cor de fundo*/
+    padding: 1rem;/*adiciona um espaçamento interno*/
+    color: #fff;/*adiciona cor na letra*/
+    text-align: center; /*alinhamento ao centro da tela*/
+    margin:0.2rem;/*margin da página*/
+}
+
+h1{
+    padding-bottom: 2rem;/*espaçamento interno inferior*/
+}
+
+input{
+    margin: 0 2rem 0 0; /*retirou as margens*/
+    width: 70%; /*mudou o tamanho e fez ele ocupar 70% da largura da página*/
+    padding: .6rem;/*espaço interno*/
+    font-size: 1rem;/*tamanho da fonte*/
+    border: none;/*linha da borda que a gente retirou*/
+    outline: none;/*quando clicado tira a borda*/
+    border-radius: 2rem;/*deixa a borda arredondada*/
+    color: rgb(60, 53, 53);
+}
+
+#addBtn{
+    width: 25%;/*mudou o tamanho e fez ele ocupar 70% da largura da página*/
+    padding: 0.5rem;/*espaço interno*/
+    background:rgb(244, 239, 239);/*altera a cor do fundo*/
+    color: rgb(60, 53, 53);/*adiciona cor na letra*/
+    text-align: center;/*alinha o texto ao centro*/
+    font-size: 1rem;/*tamanho da fonte*/
+    border-radius: 2rem;/*arredonda as bordas*/
+    border: none;/*retira as bordas*/
+    outline: none;/*quando clicado tira a borda*/
+    cursor: pointer;/*deixa o ponteiro com uma mãozinha clicavel*/
+    transition: 0.2s;/*tempo de transição para realizarmos algum efeito*/
+}
+
+#addBtn:hover{
+    background-color: rgb(77, 124, 92);
+    transform: rotate(0.5turn);
+    /*transform: scale(0.5) translate(-100%, -100%);*/
+}
+
+.flex{
+    display: flex;/*ao invés de ficar adicionando no css o flex, já deixou uma classe separada para só chamar no HTML quando for preciso */
+}
+
+#tasks{
+    margin: 1rem;
+}
+
+ul{
+    list-style: none;/*tira as marcações*/
+}
+
+ul li{
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: rgb(119, 195, 117);/*segunda cor de fundo inserida das tarefas*/
+    position: relative;
+    font-size: 18px;
+}
+
+ul li:nth-child(odd){/*listra zebrada*/
+    background-color: rgb(188, 239, 197);/*primeira cor de fundo inserida das tarefas*/
+}
+
+ul li:hover{
+    background-color: rgb(201, 159, 149);/*cor quando o mouse passa pelas tarefas*/
+}
+
+ul li.checked{
+    background: rgb(7, 241, 58);/*cor de fundo quando clicada cheked*/
+    color: #fff;/*cor da fonte*/
+    text-decoration: line-through;/*risco em cima do texto*/
+}
+
+ul li.checked::before{/*before cria um novo elemento (o checked)*/
+    content: "";/*cria um elemento vazio */
+    position: absolute;
+    border: rgb(2, 60, 15) solid;
+    top:10px;
+    left: 16px;/*altura*/
+    height: 15px;/*largura*/
+    width: 10px;
+    border-width: 0 2px 2px 0;/* faz o desenho do checked*/
+    transform: rotate(45deg);/* rotaciona o check*/
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 0rem .4rem 0rem 1rem;/*posição do botão*/
+}
+
+.close:hover{
+    background-color: red;
+    color: aliceblue;
+    /* align-items: center;
+    justify-items: center;*/
+}
+
+
+

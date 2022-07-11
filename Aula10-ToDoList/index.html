@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Venha fazer sua To Do List</title>
+</head>
+
+<body>
+    <header class="header"> <!--criamos o header e colocamos um seletor class-->
+        <h1>To Do List</h1><!--criamos um título-->
+        <article class="flex"><!--article porque teremos uma divisão de input e com o button-->
+            <input type="text" id="myInput" placeholder="Insira uma tarefa"><!--para pegar a informação do usuário-->
+            <button id="addBtn">Adicionar Tarefa</button><!--para enviar a informação para o usuário-->
+        </article>
+
+        <section id="tasks"><!--criamos a section para a lista de tarefa-->
+            <ul id="myUL">
+               <!--criou a lista vazia para receber as tarefas-->
+            </ul>
+        </section>
+
+    </header>
+
+    <script src="./assets/js/script.js"></script>
+    </body>
+</html>
