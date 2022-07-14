@@ -33,4 +33,4 @@ const btnGetAdvice = document.querySelector("#get-advice");
 
 btnGetAdvice.addEventListener("click", function (){
     getAdvice();
-})
+});
