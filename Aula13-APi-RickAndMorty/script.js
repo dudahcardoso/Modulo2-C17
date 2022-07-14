@@ -1,5 +1,8 @@
+//declarou a variavel page globalmente porque as funções precisam acessar ela
+let page = 1;
+
 async function getCharacters(){
-    const resposta = await fetch("https://rickandmortyapi.com/api/character");
+    const resposta = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
 
     const data = await resposta.json();
     //console.log(data.results); //vizualizou somente o array results que está com os personagens
@@ -22,7 +25,6 @@ async function getCharacters(){
                 <p class="species-character">${character.gender}</p>
                 <h4>Origin</h4>
                 <p class="species-character">${character.origin.name}</p>
-
             </div>
         </div>
         `
@@ -31,3 +33,21 @@ async function getCharacters(){
     })
 }
 getCharacters();
+
+//paginação simples
+function viewMore(){
+    page++;
+    getCharacters();
+    console.log(page);
+}
+//viewMore();
+
+//paginação infinita
+window.addEventListener("scroll", function (){
+    const {scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    //desestruturou os objetos que vem do DOM, lembrando que o DOM é uma grande lista
+
+    if(scrollTop + clientHeight >= scrollHeight - 300){
+        viewMore();
+    }
+});
