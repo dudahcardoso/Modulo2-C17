@@ -34,7 +34,7 @@ async function getCharacters(){
 }
 getCharacters();
 
-//paginação simples
+//paginação simples usando button
 function viewMore(){
     page++;
     getCharacters();
