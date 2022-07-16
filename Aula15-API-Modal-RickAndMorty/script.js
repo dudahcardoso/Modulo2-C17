@@ -9,6 +9,7 @@ const modalGender = document.querySelector("#modal-gender");
 const modalOrigin = document.querySelector("#modal-origin");
 const modalLocation = document.querySelector("#modal-location");
 const modalStatus = document.querySelector("#modal-status");
+const modalEpisode = document.querySelector("#modal-ep");
 //MODAL
 
 async function getCharacters(){
@@ -70,22 +71,29 @@ async function getCharacters(){
                 `https://rickandmortyapi.com/api/character/${idCard}`
             );
             const data = await resp.json();//ver todos os dados do personagem
-            //console.log(data);
+            console.log(data);
 
-        })
+            modal.style.display = "flex";
+
+            //src é um atributo
+            modalImage.setAttribute("src", data.image);
+            modalName.innerText = data.name;
+            modalSpecies.innerText = data.species;
+            modalGender.innerText = data.gender;
+            modalOrigin.innerText = data.origin.name;
+            modalLocation.innerText = data.location.name;
+            modalStatus.innerText = data.status;
+            modalEpisode.innerText = data.episode.length;            
+        });
+    });
+
+    //fechar a janela
+    window.addEventListener("click", function (event){
+        if(!event.target.classList.contains("modal-item")){
+            modal.style.display = "none";
+            //contains de conter
+        }
     })
-
-
-
-
-
-
-
-
-
-
-
-
 }
 getCharacters();
 
