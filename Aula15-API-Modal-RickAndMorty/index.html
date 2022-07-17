@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rick And Morty</title>
+</head>
+<body>
+    <header>
+        <h1>Personagens</h1>
+        <span></span>
+    </header>
+
+    <section id="character-list">
+        <!-- <div class="card">
+            <img class="image-character" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Imagem do Rick Sanchez">
+
+            <div>
+                <h2 class="name-character">Rick Sanchez</h2>
+                <p class="species-character">Human</p>
+                <h4>Gender</h4>
+                <p class="species-character">Male</p>
+                <h4>Origin</h4>
+                <p class="species-character">Earth (c-137)</p>
+
+            </div>
+        </div> -->
+
+
+    </section>
+
+    <button id="more" onclick="viewMore()">Ver mais</button>
+
+    <footer>
+
+    </footer>
+
+    <!-- modal de detalhes do personagem -->
+    <section id="modal-overlay">
+        <div id="modal" class="modal-item">
+            <span id="close-modal">x</span>
+            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Imagem do Rick Sanchez" class="modal-item" id="modal-image">
+
+            <div>
+                <h2 class="modal-item" id="modal-name">Rick Sanchez</h2>
+                <h4 class="modal-item">Species</h4>
+                <p class="modal-item" id="modal-species">Human</p>
+                <h4 class="modal-item">Gender</h4>
+                <p class="modal-item" id="modal-gender">Male</p>
+                <h4 class="modal-item">Origin</h4>
+                <p class="modal-item" id="modal-origin">Earth (c-137)</p>
+                <h4 class="modal-item">Location</h4>
+                <p class="modal-item" id="modal-location">Citadel of Ricks</p>
+                <h4 class="modal-item">Status</h4>
+                <p class="modal-item" id="modal-status">Alive</p>
+                <h4 class="modal-item">Episodes</h4>
+                <p class="modal-item" id="modal-ep"></p>
+
+            </div>  
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

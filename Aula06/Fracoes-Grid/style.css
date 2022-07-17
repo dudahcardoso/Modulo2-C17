@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+};
+
+body, html{
+    width: 100%; /*largura de 100% onde essa tela estiver  */
+    height: 100vh; /* 100% da tela e todos elementos centralizados */
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /* coloca o espaço ao meio dos elementos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: .6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+section#container{
+    display: grid;/* grid trabalha como matriz de linha e coluna */
+
+    grid-template-columns: repeat(4, 200px);/* transformo meu container em 4 colunas de 200px de tamanho */
+    grid-template-rows: repeat(4, 200px); /* transformo meu container em 4 linhas de 200px de tamanho */
+    gap: 10px;
+
+    justify-content: center;
+
+}
+
+section#container nav{
+    background-color: #ccc;
+    /* ele ocupe a 1 até a 5 espaço */
+    grid-column: 1 / 5;
+    /* ocupe sempre a primeira linha */
+    grid-row: 1;
+}
+
+section#container main{
+    background-color: #ccc;
+
+    grid-column: 1 / 4;/* ocupa a coluna 1 até a 4 */
+    grid-row: 2 / 4; /* ocupa da linha 2 até a linha 4 */
+}
+
+section#container aside{
+    background-color: #ccc;
+
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+}
+
+section#container footer{
+    background-color: #ccc;
+
+    grid-column: 1 / 5;
+    grid-row: 4;
+}

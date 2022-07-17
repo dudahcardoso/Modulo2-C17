@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Slab, Arial;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("https://magazine.zarpo.com.br/wp-content/uploads/2022/01/Praia-Vermelha_Zarpo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #ffffff35;
+    backdrop-filter: blur(15px);
+    width: 900px;
+    height: 400px;
+    border-radius: .4rem;
+}
+
+section h1{
+    font-size: 3rem;
+    color: maroon;
+    text-shadow: black 2px 2px;
+}
+
+button#get-advice{
+    font-size: 15px;
+    width: 190px;
+    height: 70px;
+    border-width: 6px;
+    color: #ffffff;
+    border-color: #54381e;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    text-shadow: inset 0px 1px 0px #54381e;
+    background: linear-gradient(#a6827e,#54381e);
+    cursor: pointer;
+}
+
+button#get-advice:hover{
+    background: linear-gradient(#54381e, #a6827e);
+}
+
+p#frase{
+    font-size: 1.5rem;
+    text-align: center;
+    color: maroon;
+    text-shadow: black 1.3px 1.3px;
+    font-weight: 600;
+}
+

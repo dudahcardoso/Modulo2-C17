@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://i.imgur.com/5MlgQLb.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    background: linear-gradient(180deg, #0f1740 15%, transparent 100%);
+}
+
+header h1{
+    padding: 3rem;
+    text-align: center;
+    color: #E3F2FF;
+    font-size: 3rem;
+}
+
+#locations-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    padding: 5rem;
+    width: 100%;
+}
+
+div.card {
+    position: relative;
+    height: 100%;
+}
+
+div.card h2 {
+    padding: .4rem .4rem .4rem 1.5rem;
+    background-color: #3b6fbdbf;
+    color: #E3F2FF;
+    font-size: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+img.planet{
+    width: 2rem;
+    position: absolute;
+    z-index: 1;
+    left: -1rem;
+}
+
+button {
+    display: flex;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    background-color: #3b6fbdbf;
+    border: none;
+    border-radius: .5rem;
+    color: #E3F2FF;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    transform: scale(.95);
+}
+
+div.details {
+    position: absolute;
+    background-color: #E3F2FF;
+    color: #3B6FBD;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow:
+    #32325d40 0px 50px 100px -20px, 
+    #0000004d 0px 30px 60px -30px, 
+    #0a254059 0px -2px 6px 0px inset;
+    width: 250px;
+    height: auto;
+    z-index: 100;
+    margin-top: .5rem;
+    display: none;
+}
+
+div.details h4{
+    padding-top: .5rem;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #030617;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3B6FBD90;
+    border-radius: 5px;
+}
+

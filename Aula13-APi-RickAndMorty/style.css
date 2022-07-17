@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* tamanho real */
+    font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eeeeee;
+    /* height:100vh */
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    padding: 3rem;
+    background-image: url('https://i.imgur.com/T02tmb2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header span{
+    background-color: #00002C;
+    width: 24rem;
+    height: 5rem;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    /* para ficar embaixo do h2 */
+    border-radius: .3rem;
+}
+
+header h1{
+    color: #F0FF00;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+section#character-list {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    /* height: 100vh; */
+}
+
+.card {
+    display: flex;
+    background-color: #3C3E44;
+    height: 230px;
+    width: 560px;
+    border-radius: .5rem;
+    margin: 4px 0;
+}
+
+.image-character {
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.card div {
+    padding: 1rem;
+}
+
+.name-character {
+    color: #ededed;
+}
+
+.species-character {
+    padding-bottom: 10px;
+}
+
+.card h4 {
+    color: #a4a4a4;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.card p {
+    color: #ededed;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+
+    background-image: url('https://i.imgur.com/T02tmb2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* continuar embaixo */
+    background-size: cover;
+    /* cortar certinho a imagem */
+}
+
+/* estilização do button */
+button#more {
+    display: flex;
+    margin: 2rem auto;
+
+    background-color: #00002C;
+    border: none;
+    outline: none;
+    color: #90ff05;
+    border-radius: .5rem;
+    padding: .6rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* transform: scale(1); */
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+button#more:hover {
+    transform: scale(.95);
+}

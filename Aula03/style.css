@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0; /* espaçamento interno */
+    margin: 0; /* espaçamento externo */
+    box-sizing: 0; /* caixa externo da página  */
+}
+
+body{
+    /* background-image: url("./Software\ engineer-amico.png"); para colocar a imagem ao fundo */
+    background-color: black;
+} 
+
+#titulo-pagina{
+    color: aqua;   /* mudar a cor da fonte */
+    font-size: 5rem;   /* muda o tamanho da fonte */
+    background-color: black;    /*cor de fundo*/ 
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;   /* tipo de fonte da letra */
+    font-weight: 300;   /* tamanho do negrito da fonte */
+    font-style: italic;   /* estilo da fonte */
+
+    /* padding: 5rem 2rem 1rem 3rem; */
+    border: solid 5px red;
+    /* margin: 5rem 2rem 5rem 2rem; */
+    padding-left: 5rem;
+    text-align: center;
+
+    /* pseudoclasses */
+    cursor: pointer;    
+    transition: all 0.4s ease;
+}
+
+#titulo-pagina:hover{
+    color: black;
+    background-color: aquamarine;
+    border: dashed 2px red;
+    transform: scale(1);
+}
+
+
+
+.titulo-css{
+    color: white;
+    /* background-color: green; */
+    background: rgb(58,180,156);
+    background: linear-gradient(90deg, rgba(58,180,156,0.38728995015975143) 9%, rgba(29,253,190,1) 25%, rgba(252,176,69,1) 100%);
+    padding: 2rem;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+/* #teste-corte{
+    align-items: center;
+} */
+
+#image{
+    width: 40%;  /*tamanho da imagem */
+    /* height: 30vh; */
+    /* object-fit: cover;
+    object-position: center; */
+}
+
+a#link{
+    color: white;
+    font-size: 2rem;
+    padding: 3rem;
+    text-decoration: none;
+}
+
+a#link:visited{
+    color: purple;
+}
+
+a#link:hover{
+    font-weight: bold;
+}
+
+a#link:active { 
+    color: lime 
+} /* links ativos */
+
+ 

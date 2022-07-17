@@ -1,0 +1,51 @@
+body{
+    padding: 15px;
+    background: #eee;
+}
+
+.area-visivel span{
+    color: #666;
+    display: none;
+}
+
+.caixa{
+    border: solid 1px #666;
+    padding: 5px 10px;
+    margin: 40px;
+}
+
+/*min-width*/
+@media screen and (min-width: 900px){
+    .dois{
+        background-color: #f90;
+    }
+    span.px900{
+        display: inline-block;
+    }
+}
+
+/*max-width*/
+@media screen and (max-width: 600px){
+    .um {
+        background: #f9c;
+    }
+    span.px600{
+        display: inline-block;
+    }
+}
+
+/*min-widh & max-width*/
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .tres{
+        background: #9cf;
+    }span.px600-900{
+        display: inline-block;
+    }
+}
+
+/*max device width*/
+@media screen and (max-device-width: 480px){
+    .iphone{
+        background: #ccc;
+    }
+}

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+};
+
+body, html{
+    width: 100%; /*largura de 100% onde essa tela estiver  */
+    height: 100vh; /* 100% da tela e todos elementos centralizados */
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /* coloca o espaço ao meio dos elementos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: .6rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+section#page-one{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 90px; /* CSS grid, gap coloca um espaçamento entre os elementos https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
+
+    max-width: 90%; /* deixar a tela no máximo de 90% */
+    margin: 0 auto; /* vai centralizar e ele vai colocar a margin automatica centralizando os elementos */
+}
+
+section#page-one div{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+}
+
