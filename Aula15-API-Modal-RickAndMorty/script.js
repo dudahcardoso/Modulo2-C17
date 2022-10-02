@@ -56,7 +56,7 @@ async function getCharacters(){
     cards.forEach((card) => {
         //verificar se o card que eu quero foi clicado
         card.addEventListener("click", async function (event){
-            //console.log(event); //evento para o clique do card
+            console.log(event); //evento para o clique do card
             //precisamos acessar o path e filtrar os items
             //filter é uma função de array, descubrir o item que possui a className
             const cardElement = event.path.filter((item) => item.className == "card");
@@ -71,7 +71,7 @@ async function getCharacters(){
                 `https://rickandmortyapi.com/api/character/${idCard}`
             );
             const data = await resp.json();//ver todos os dados do personagem
-            console.log(data);
+            //console.log(data);
 
             modal.style.display = "flex";
 

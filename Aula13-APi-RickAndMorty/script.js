@@ -5,6 +5,7 @@ async function getCharacters(){
     const resposta = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
 
     const data = await resposta.json();
+    //console.log(data)
     //console.log(data.results); //vizualizou somente o array results que está com os personagens
 
     // data.results.forEach(index => {
